@@ -2,7 +2,7 @@
 
 A Minecraft Datapack PVP game based on gathering Obsidian for points!
 
-The Obidsian Mining Game, or OMG for short, is a survival based game in which players have to obtain and turn in 32 (this amount is configurable) Obsidian blocks.
+The Obsidian Mining Game, or OMG for short, is a survival based game in which players have to obtain and turn in 32 (this amount is configurable) Obsidian blocks.
 
 ## Gameplay
 
