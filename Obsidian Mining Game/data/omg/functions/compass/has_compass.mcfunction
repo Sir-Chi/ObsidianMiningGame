@@ -5,11 +5,11 @@ execute if entity @a[nbt=!{Inventory:[{id:"minecraft:compass",tag:{tracker_compa
 scoreboard players remove @a hasCompass 1
 scoreboard players set @a offhandHasItem 0
 scoreboard players set @a[nbt={Inventory:[{Slot:-106b}]}] offhandHasItem 1
-item replace entity @a[scores={hasCompass=0,offhandHasItem=0}] weapon.offhand with compass{tracker_compass:1b}
+item replace entity @a[scores={hasCompass=0,offhandHasItem=0}] weapon.offhand with compass{display:{Name:'{"text":"Trader Tracker"}',Lore:['{"text":"Pointing to the Obsidian Trader"}']},tracker_compass:1b}
 scoreboard players set @a[nbt={Inventory:[{id:"minecraft:compass",tag:{tracker_compass:1b}}]}] hasCompass 5 
 
 #Gives players who don't have compass (score hasCompass 0) will gain a compass. Dependant on if they have something in thier off hand or not.
-give @a[scores={hasCompass=0,offhandHasItem=1..}] compass{tracker_compass:1b}
+give @a[scores={hasCompass=0,offhandHasItem=1..}] compass{display:{Name:'{"text":"Trader Tracker"}',Lore:['{"text":"Pointing to the Obsidian Trader"}']},tracker_compass:1b}
 
 #Updates the players score to show they have compass now
 scoreboard players set @a[scores={hasCompass=0}] hasCompass 5
