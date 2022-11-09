@@ -31,3 +31,12 @@ There is collectively a maximum of 8 obsidian that can be traded in for points a
 There's no PVP allowed for the first 20 minutes, giving all players an equal chance to get started.
 
 After 20 minutes an announcement will be made that PVP is now allowed.
+
+## How To Install
+
+> Download the datapack and then unzip the file.
+> To play the game, create a new minecraft world, and add this datapack into the world's datapack folder.
+> Select the datapack from the new world creation menu in the game.
+> Make sure the world is set to "Creative" Game Mode & has "Allow Cheats" enabled.
+> Once you load into the world run the command "/function omg:master/setup" directly or run the command "/reload" to have the command appear in chat for you to click. This will create the OMG Starting Lobby.
+> If on a server, make sure that command blocks are turned on in the server configs, spawn protection is turned off and player render distance is high.
