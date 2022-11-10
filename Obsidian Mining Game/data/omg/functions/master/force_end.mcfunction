@@ -4,6 +4,10 @@ scoreboard players set currentstate gamestate 2
 ##Stops timer
 schedule clear omg:timer/seconds
 
+##Stops Points Checker
+schedule clear omg:master/points_loop
+schedule clear omg:master/points_loop
+
 scoreboard players set seconds timer 0
 scoreboard players set minutes timer 0
 scoreboard players set minutes timer 0

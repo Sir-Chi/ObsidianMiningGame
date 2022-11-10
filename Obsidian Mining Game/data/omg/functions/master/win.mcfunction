@@ -4,6 +4,10 @@ scoreboard players set currentstate gamestate 2
 ##Stops timer
 schedule clear omg:timer/seconds
 
+##Stops Points Checker
+schedule clear omg:master/points_loop
+schedule clear omg:master/points_loop
+
 ##Announce who has won
 tellraw @a ["",{"selector":"@s[scores={score=32}]","color":"gold"},{"text":" has won OMG!","color":"gold"}]
 

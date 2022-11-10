@@ -13,8 +13,6 @@ function omg:compass/compass_dropped
 function omg:compass/has_compass
 function omg:keepinventory/deathcheck
 
-execute as @a[nbt={Inventory:[{id:"minecraft:netherite_scrap"}]}] run function omg:master/points_tracking
-
 execute as @e[limit=1,name="tradermarker"] at @s run function omg:compass/trackedtrader
 
 #Just in case, to maintain timing integrity

@@ -50,6 +50,9 @@ scoreboard players reset @a death
 ##Starts Timer
 function omg:timer/timer
 
+##Starts Points Checker
+function omg:master/points_loop
+
 ##Set Up Players
 gamerule fallDamage true
 
