@@ -10,7 +10,8 @@ schedule clear omg:master/points_loop
 
 scoreboard players set seconds timer 0
 scoreboard players set minutes timer 0
-scoreboard players set minutes timer 0
+scoreboard players set traderseconds timer 0
+scoreboard players set traderminutes timer 0
 
 ##Announces game has been ended manually
 tellraw @a {"text":"Game Ended Manually!","bold":true,"color":"gray"}

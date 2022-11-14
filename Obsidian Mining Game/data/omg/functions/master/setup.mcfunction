@@ -30,6 +30,8 @@ scoreboard objectives add hasCompass dummy
 scoreboard objectives add offhandHasItem dummy
 scoreboard objectives add gamestate dummy
 scoreboard players set currentstate gamestate 0
+scoreboard objectives add traderuses dummy
+scoreboard players set TraderUses traderuses 0
 
 ## Set up randomiser
 scoreboard objectives add math dummy
@@ -51,6 +53,7 @@ worldborder set 1000
 scoreboard objectives add timer dummy
 scoreboard players set seconds timer 0
 scoreboard players set minutes timer 0
+scoreboard players set traderseconds timer 0
 scoreboard players set traderminutes timer 0
 scoreboard players set tradercanspawn timer 0
 

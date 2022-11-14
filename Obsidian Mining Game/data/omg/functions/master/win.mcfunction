@@ -26,4 +26,4 @@ effect give @a minecraft:regeneration 2 255
 
 gamerule doDaylightCycle false
 
-execute as @a at @s run playsound music.credits record @s ~ ~ ~
+execute as @a at @s run playsound music.credits music @s ~ ~ ~
