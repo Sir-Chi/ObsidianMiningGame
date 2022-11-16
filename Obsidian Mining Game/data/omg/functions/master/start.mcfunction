@@ -18,6 +18,7 @@ team join spectator @a[team=]
 
 ##Sets up scoreboards
 scoreboard objectives setdisplay sidebar score
+execute if score TotalToGet score matches ..0 run scoreboard players set TotalToGet score 8
 
 ##Sets Teams To Survival & Anyone On The Spectator/Admin Team Gets Put In Spectator/Admin Mode & Given Night Vision
 gamemode survival @a[team=!spectator]
@@ -39,7 +40,7 @@ effect give @a minecraft:regeneration 2 255
 
 ##Spreads players
 execute if score Teams gamestate matches 0 run spreadplayers 0 0 200 500 false @a[team=player]
-execute if score Teams gamestate matches 1 run spreadplayers 0 0 200 500 true @a[team=!admin]
+execute if score Teams gamestate matches 1 run spreadplayers 0 0 200 500 true @a[team=!admin,team=!spectator]
 
 ##Dificulty made sure to be hard
 difficulty hard

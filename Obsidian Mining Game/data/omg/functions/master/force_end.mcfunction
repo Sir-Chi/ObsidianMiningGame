@@ -13,6 +13,16 @@ scoreboard players set minutes timer 0
 scoreboard players set traderseconds timer 0
 scoreboard players set traderminutes timer 0
 
+##Resets trader
+execute at @e[name="tradermarker"] run fill ~ ~ ~ ~6 ~3 ~4 air replace minecraft:mangrove_door
+execute at @e[name="tradermarker"] run fill ~ ~ ~ ~6 ~3 ~4 air
+execute at @e[name="tradermarker"] run kill @e[name="Obsidian Trader",distance=..7]
+execute at @e[name="tradermarker"] run kill @e[name="Obsidian Trader Llama",distance=..7]
+
+kill @e[name="tradermarker"]
+forceload remove all 
+forceload add 42069 42069
+
 ##Announces game has been ended manually
 tellraw @a {"text":"Game Ended Manually!","bold":true,"color":"gray"}
 
@@ -35,6 +45,14 @@ effect give @a minecraft:regeneration 2 255
 team empty player
 team empty spectator
 team empty admin
+team empty aqua
+team empty blue
+team empty gold
+team empty green
+team empty magenta
+team empty purple
+team empty red
+team empty yellow
 
 ##Resets Game Setup
 scoreboard players reset @a death

@@ -10,7 +10,7 @@ execute if score currentstate gamestate matches 1 run function omg:master/during
 function omg:master/obsidian_tracking
 function omg:master/no_nether
 function omg:compass/compass_dropped
-function omg:compass/has_compass
+execute if score currentstate gamestate matches 1 if score tradercanspawn timer matches 1 run function omg:compass/has_compass
 function omg:keepinventory/deathcheck
 
 execute as @e[limit=1,name="tradermarker"] at @s run function omg:compass/trackedtrader
