@@ -38,7 +38,8 @@ effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
 ##Spreads players
-spreadplayers 0 0 200 500 false @a[team=player]
+execute if score Teams gamestate matches 0 run spreadplayers 0 0 200 500 false @a[team=player]
+execute if score Teams gamestate matches 1 run spreadplayers 0 0 200 500 true @a[team=!admin]
 
 ##Dificulty made sure to be hard
 difficulty hard
