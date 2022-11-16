@@ -13,7 +13,7 @@ gamerule doMobSpawning true
 gamerule doPatrolSpawning false
 
 ##Sorts out teams
-team join player @a[team=!admin,team=!spectator]
+execute if score Teams gamestate matches 0 run team join player @a[team=!admin,team=!spectator]
 team join spectator @a[team=]
 
 ##Sets up scoreboards

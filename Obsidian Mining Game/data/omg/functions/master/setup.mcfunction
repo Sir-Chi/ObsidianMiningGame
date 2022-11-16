@@ -30,6 +30,7 @@ scoreboard objectives add hasCompass dummy
 scoreboard objectives add offhandHasItem dummy
 scoreboard objectives add gamestate dummy
 scoreboard players set currentstate gamestate 0
+scoreboard players set Teams gamestate 0
 scoreboard objectives add traderuses dummy
 scoreboard players set TraderUses traderuses 0
 
@@ -80,6 +81,22 @@ team add spectator "Spectator"
 team modify spectator color gray
 team add admin "Admin"
 team modify admin color dark_red
+team add blue "Blue"
+team modify blue color blue
+team add red "Red"
+team modify red color red
+team add green "Green"
+team modify green color green
+team add yellow "Yellow"
+team modify yellow color yellow
+team add magenta "Magenta"
+team modify magenta color light_purple
+team add aqua "Aqua"
+team modify aqua color aqua
+team add gold "Gold"
+team modify gold color gold
+team add purple "Purple"
+team modify purple color dark_purple
 
 ##Spawn Lobby
 place template qfe:lobby -6 99 -6
