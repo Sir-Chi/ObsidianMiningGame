@@ -57,8 +57,17 @@ team empty yellow
 ##Resets Game Setup
 scoreboard players reset @a death
 scoreboard players reset @a score
+scoreboard players reset AquaTeam score
+scoreboard players reset BlueTeam score
+scoreboard players reset GoldTeam score
+scoreboard players reset GreenTeam score
+scoreboard players reset MagentaTeam score
+scoreboard players reset PurpleTeam score
+scoreboard players reset RedTeam score
+scoreboard players reset YellowTeam score
 scoreboard players reset @a obsidianinventory
 scoreboard players set TotalToGet score 32
+
 
 ##Runs set-up function
 function omg:master/setup
