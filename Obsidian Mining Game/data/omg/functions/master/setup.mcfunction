@@ -33,6 +33,7 @@ scoreboard players set currentstate gamestate 0
 scoreboard players set Teams gamestate 0
 scoreboard objectives add traderuses dummy
 scoreboard players set TraderUses traderuses 0
+scoreboard objectives setdisplay sidebar score
 
 ## Set up randomiser
 scoreboard objectives add math dummy
