@@ -18,6 +18,7 @@ team join spectator @a[team=]
 
 ##Sets up scoreboards
 scoreboard objectives setdisplay sidebar score
+scoreboard objectives setdisplay belowName health
 execute if score TotalToGet score matches ..0 run scoreboard players set TotalToGet score 8
 
 ##Sets Teams To Survival & Anyone On The Spectator/Admin Team Gets Put In Spectator/Admin Mode & Given Night Vision

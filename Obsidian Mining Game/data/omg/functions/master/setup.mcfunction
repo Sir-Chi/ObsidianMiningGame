@@ -20,6 +20,7 @@ gamerule doWeatherCycle false
 gamerule disableElytraMovementCheck true
 gamerule keepInventory true
 
+scoreboard objectives add health health "Health"
 scoreboard objectives add death deathCount "Deaths"
 scoreboard objectives add score dummy "Obsidian Turned In"
 scoreboard players set TotalToGet score 32
