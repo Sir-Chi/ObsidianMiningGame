@@ -100,8 +100,5 @@ team modify gold color gold
 team add purple "Purple"
 team modify purple color dark_purple
 
-##Spawn Lobby
-place template qfe:lobby -6 99 -6
-
 ##Teleports Players Into Lobby
 teleport @a 0 100 0
