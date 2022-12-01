@@ -35,6 +35,8 @@ scoreboard players set Teams gamestate 0
 scoreboard objectives add traderuses dummy
 scoreboard players set TraderUses traderuses 0
 scoreboard objectives setdisplay sidebar score
+scoreboard objectives add setup dummy "Game setup"
+scoreboard players set ObsidianDebuff setup 0
 
 ## Set up randomiser
 scoreboard objectives add math dummy

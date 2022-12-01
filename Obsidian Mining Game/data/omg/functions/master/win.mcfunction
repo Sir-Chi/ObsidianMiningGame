@@ -31,6 +31,7 @@ difficulty peaceful
 effect clear @a
 effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
+execute as @a run attribute @s minecraft:generic.movement_speed base set 0.100000001490111612
 
 gamerule doDaylightCycle false
 

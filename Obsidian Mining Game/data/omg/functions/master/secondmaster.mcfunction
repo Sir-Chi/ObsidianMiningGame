@@ -7,6 +7,8 @@ execute unless data storage minecraft:general/secondtimer active run data merge 
 execute if score currentstate gamestate matches 0 run function omg:master/pregame
 execute if score currentstate gamestate matches 1 run function omg:master/during_game
 
+execute if score ObsidianDebuff setup matches 1 run function omg:master/slowness
+
 function omg:master/obsidian_tracking
 function omg:master/no_nether
 function omg:compass/compass_dropped
