@@ -19,6 +19,7 @@ gamerule fallDamage false
 gamerule doWeatherCycle false
 gamerule disableElytraMovementCheck true
 gamerule keepInventory true
+gamerule doImmediateRespawn true
 
 scoreboard objectives add health health "Health"
 scoreboard objectives add death deathCount "Deaths"
