@@ -40,7 +40,7 @@ effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
 ##Spreads players
-execute if score Teams gamestate matches 0 run spreadplayers 0 0 200 500 false @a[team=player]
+execute if score Teams gamestate matches 0 run spreadplayers 0 0 200 500 false @a[team=!admin,team=!spectator]
 execute if score Teams gamestate matches 1 run spreadplayers 0 0 200 500 true @a[team=!admin,team=!spectator]
 
 ##Dificulty made sure to be hard
@@ -58,6 +58,7 @@ function omg:master/points_loop
 
 ##Set Up Players
 gamerule fallDamage true
+function omg:fortunepick/first_pick
 
 ##Sets players spawnpoint to where they are standing
 execute as @a at @s run spawnpoint @s ~ ~ ~

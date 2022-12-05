@@ -1,2 +1,2 @@
-give @a[team=player,nbt=!{Inventory:[{tag:{tracker_compass:1b}}]}] compass{display:{Name:'{"text":"Trader Tracker"}',Lore:['{"text":"Pointing to the Obsidian Trader"}']},tracker_compass:1b} 1
-scoreboard players set @a[team=player] hasCompass 5
+give @a[team=!spectator,nbt=!{Inventory:[{tag:{tracker_compass:1b}}]}] compass{display:{Name:'{"text":"Trader Tracker"}',Lore:['{"text":"Pointing to the Obsidian Trader"}']},tracker_compass:1b} 1
+scoreboard players set @a[team=!spectator] hasCompass 5

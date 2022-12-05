@@ -34,9 +34,12 @@ scoreboard players set currentstate gamestate 0
 scoreboard players set Teams gamestate 0
 scoreboard objectives add traderuses dummy
 scoreboard players set TraderUses traderuses 0
-scoreboard objectives setdisplay sidebar score
+
 scoreboard objectives add setup dummy "Game setup"
 scoreboard players set ObsidianDebuff setup 0
+scoreboard players set TraderProtection setup 1
+scoreboard players set FortunePick setup 0
+scoreboard objectives setdisplay sidebar setup
 
 ## Set up randomiser
 scoreboard objectives add math dummy
@@ -79,8 +82,6 @@ scoreboard objectives add hp health
 data modify storage minecraft:death Pos set value [0.0d, 0.0d, 0.0d]
 
 ##Teams Setup
-team add player "OMGPlayer"
-team modify player color red
 team add spectator "Spectator"
 team modify spectator color gray
 team add admin "Admin"

@@ -35,5 +35,3 @@ execute if score TotalToGet score matches 65.. run execute as @a[scores={score=1
 execute if score TotalToGet score matches 65.. run execute as @a[scores={score=32}] run attribute @s generic.movement_speed base set 0.08
 execute if score TotalToGet score matches 65.. run execute as @a[scores={score=48}] run attribute @s generic.movement_speed base set 0.07
 execute if score TotalToGet score matches 65.. run execute as @a[scores={score=64}] run attribute @s generic.movement_speed base set 0.06
-execute if score TotalToGet score matches 65.. run execute as @a[scores={score=80}] run attribute @s generic.movement_speed base set 0.05
-execute if score TotalToGet score matches 65.. run execute as @a[scores={score=96}] run attribute @s generic.movement_speed base set 0.04

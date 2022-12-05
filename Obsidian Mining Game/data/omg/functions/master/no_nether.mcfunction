@@ -1,2 +1,2 @@
-execute as @a[team=player] at @s run execute if block ~ ~ ~ minecraft:nether_portal run tellraw @s "Sorry! The Nether is disabled!"
-execute as @a[team=player] at @s run execute if block ~ ~ ~ minecraft:nether_portal run setblock ~ ~ ~ air
+execute as @a[team=!admin,team=!spectator] at @s run execute if block ~ ~ ~ minecraft:nether_portal run tellraw @s "Sorry! The Nether is disabled!"
+execute as @a[team=!admin,team=!spectator] at @s run execute if block ~ ~ ~ minecraft:nether_portal run setblock ~ ~ ~ air

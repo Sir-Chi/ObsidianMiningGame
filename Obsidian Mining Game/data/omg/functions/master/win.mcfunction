@@ -9,7 +9,7 @@ schedule clear omg:master/points_loop
 schedule clear omg:master/points_loop
 
 ##Announce who has won
-execute if score Teams gamestate matches 0 run tellraw @a ["",{"selector":"@s[scores={score=32}]","color":"gold"},{"text":" has won OMG!","color":"gold"}]
+execute if score Teams gamestate matches 0 if score @s score = TotalToGet score as @s run tellraw @a ["",{"selector":"@s]","color":"gold"},{"text":" has won OMG!","color":"gold"}]
 execute if score Teams gamestate matches 1 if score AquaTeam score = TotalToGet score as @p[team=aqua] run tellraw @a ["",{"text":"Aqua Team","color":"aqua"},{"text":" has won OMG!","color":"gold"}]
 execute if score Teams gamestate matches 1 if score BlueTeam score = TotalToGet score as @p[team=blue] run tellraw @a ["",{"text":"Blue Team","color":"blue"},{"text":" has won OMG!","color":"gold"}]
 execute if score Teams gamestate matches 1 if score GoldTeam score = TotalToGet score as @p[team=gold] run tellraw @a ["",{"text":"Gold Team","color":"gold"},{"text":" has won OMG!","color":"gold"}]
