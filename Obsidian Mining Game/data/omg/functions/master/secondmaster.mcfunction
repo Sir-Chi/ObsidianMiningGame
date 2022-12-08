@@ -4,6 +4,8 @@ execute unless data storage minecraft:general/secondtimer active run data merge 
 
 #Functions to call once per second
 
+execute if score currentstate gamestate matches 0 run scoreboard players operation TotalToGet setup = TotalToGet score
+
 execute if score currentstate gamestate matches 0 run function omg:master/pregame
 execute if score currentstate gamestate matches 1 run function omg:master/during_game
 

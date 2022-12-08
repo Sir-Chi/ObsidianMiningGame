@@ -42,7 +42,6 @@ effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
 ## Empties All The Teams
-team empty player
 team empty spectator
 team empty admin
 team empty aqua

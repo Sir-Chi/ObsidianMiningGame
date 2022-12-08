@@ -14,7 +14,6 @@ gamerule doPatrolSpawning false
 
 ##Sorts out teams
 execute if score Teams gamestate matches 0 run team join player @a[team=!admin,team=!spectator]
-team join spectator @a[team=]
 
 ##Sets up scoreboards
 scoreboard objectives setdisplay sidebar score
