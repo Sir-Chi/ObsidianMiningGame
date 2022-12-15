@@ -24,8 +24,6 @@ execute if score FortunePick setup matches 1 run function omg:fortunepick/has_pi
 
 execute as @e[limit=1,name="tradermarker"] at @s run function omg:compass/trackedtrader
 
-execute if score tradercanspawn timer matches 1 run function omg:trader/detectuses
-
 #Just in case, to maintain timing integrity
 schedule clear omg:master/secondmaster
 

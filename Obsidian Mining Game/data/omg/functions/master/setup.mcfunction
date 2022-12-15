@@ -35,6 +35,7 @@ scoreboard players set currentstate gamestate 0
 scoreboard players set Teams gamestate 0
 scoreboard objectives add traderuses dummy
 scoreboard players set TraderUses traderuses 0
+scoreboard players set TraderMoving traderuses 0
 
 scoreboard objectives add setup dummy "Game setup"
 scoreboard players set TotalToGet setup 32

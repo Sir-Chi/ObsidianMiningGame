@@ -1,3 +1,4 @@
+scoreboard players set TraderMoving traderuses 1
 execute at @e[name="tradermarker"] run fill ~ ~ ~ ~6 ~3 ~4 air replace minecraft:mangrove_door
 execute at @e[name="tradermarker"] run fill ~ ~ ~ ~6 ~3 ~4 air
 execute at @e[name="tradermarker"] run kill @e[name="Obsidian Trader",distance=..7]
