@@ -29,6 +29,7 @@ scoreboard objectives add obsidianinventory dummy "Obsidian In Inventory"
 scoreboard objectives setdisplay list obsidianinventory
 scoreboard objectives add compass dummy
 scoreboard objectives add hasCompass dummy
+scoreboard objectives add hasPick dummy
 scoreboard objectives add offhandHasItem dummy
 scoreboard objectives add gamestate dummy
 scoreboard players set currentstate gamestate 0
